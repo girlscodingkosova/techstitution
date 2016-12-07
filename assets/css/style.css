@@ -10,6 +10,7 @@ nav ul a,
 nav .brand-logo {
   color: #444;
 }
+/*#DB5247*/
 
 p {
   line-height: 2rem;
@@ -52,6 +53,14 @@ p {
   font-size: inherit;
 }
 
+/*h2.header_main{
+  color: #DB5247 !important;
+}*/
+
 footer.page-footer {
   margin: 0;
+}
+
+a {
+  color: black
 }

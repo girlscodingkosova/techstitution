@@ -36,12 +36,14 @@
       <ul class="right hide-on-med-and-down menu-links">
         <li><a href="#index-banner">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#institutions">Institutions</a></li>
         <li><a href="#contactus">Contact us</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav menu-links">
         <li><a href="#index-banner">Home</a></li>
         <li><a href="#about">About</a></li>
+         <li><a href="#institutions">Institutions</a></li>
         <li><a href="#contactus">Contact us</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -52,7 +54,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">TECHSTITUTION</h1>
+        <h2 class="header center teal-text text-lighten-2"><b>TECHSTITUTION</b></h2>
         <div class="row center">
           <h5 class="header col s12 light">Learn practical software engineering skills to bring new and exciting platforms to help Kosovo's Institutions go Digital.</h5>
         </div>
@@ -138,16 +140,23 @@
 			- Smart Institutions 
 			</br>
 			</br>
-			The project is from UNICEF Innovations Lab, funded by Austrian Development Agency. 
+			The project is from <b>UNICEF Innovations Lab</b>, funded by <b>Austrian Development Agency</b>. 
+			</br>
+			</br>
 			Open Data Kosova & Girls Coding Kosova are implementing partners.
 			</br>
 			</br>
-			<b>Open Data Kosovo</b> will contribute technical expertise in the field of software engineering as well as in digital product development management and quality assurance. Furthermore, it will use its experience in organizing and implement youth engagement digital capacity building workshops to design the planned workshops and ensure their proper execution.
+			<b><a href="http://opendatakosovo.org/" style="text-decoration:underline">Open Data Kosovo</a></b> will contribute technical expertise in the field of software engineering as well as in digital product development management and quality assurance. Furthermore, it will use its experience in organizing and implement youth engagement digital capacity building workshops to design the planned workshops and ensure their proper execution.
 			</br>
 			</br>
-			<b>Girls Coding Kosova</b> will provide technical support as well as access to their network of young women in technology. In order promote a multidisciplinary approach to problem-solving, select GCK members will serve as tech ambassadors disseminating concepts of how citizens involved in different sectors can benefit from and contribute to technology for social good.
+			<b><a href="http://girlscodingkosova.org/" style="text-decoration:underline">Girls Coding Kosova</a></b> will provide technical support as well as access to their network of young women in technology. In order promote a multidisciplinary approach to problem-solving, select GCK members will serve as tech ambassadors disseminating concepts of how citizens involved in different sectors can benefit from and contribute to technology for social good.
 			</br>
 			</br>
+			<b>Friends</b>
+
+			IPKO Foundation 
+			AUK(American University in Kosovo)
+
           </p>
         </div>
       </div>
@@ -167,6 +176,39 @@
     <div class="parallax"><img src="assets/img/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
+  <div class="container">
+    <div class="section">
+
+      <div class="row" id="institutions">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4></br>Institutions</h4>
+          <p class="left-align light">
+          </br>
+		  </br>
+		  <p>First official institutional partnership for #Techstitution with the “RAEPC - Regulatory Authority of Electronic and Postal Communications"
+		  </br>
+		  We have officially signed our agreement on 25 November 2016 between RAEPC and Open Data Kosovo. Very thankful for their immediate positive response and support towards a successful cooperation in digitizing their services. We will soon link to the platform that we are currently working with. 
+		  </p>
+          </p>
+          <img src="assets/img/ARKEP.png">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">First official institutional partnership for #Techstitution with the “RAEPC - Regulatory Authority of Electronic and Postal Communications”</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/ARKEP_PARTNERSHIP.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
@@ -177,7 +219,8 @@
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text"></h5>
+          <h5 class="white-text">Address:</h5>
+          <a class="white-text"> Str. "Bajram Kelmendi", </br>Object KIG, </br>Entry 1.</a></h3>
           <ul>
             <li><a class="white-text" href="#!"></a></li>
             <li><a class="white-text" href="#!"></a></li>
@@ -186,7 +229,7 @@
         </div>
         <div class="col l3 s12" id="contactus">
           <h5 class="white-text">Contact us:</h5>
-          <a class="white-text" href="mailto:hello@techstitution.org"> hello@techstitution.org </a></h3>
+          <a class="white-text" href="mailto:hello@techstitution.org"> <b>Email:</b> hello@techstitution.org </br> <b>Phone:</b> +386 49 666 - 412</a></h3>
           <ul>
             <!-- <li><a class="white-text" href="#!">UNICEF Innovation Labs Kosovo</a></li> -->
             <!-- <li><a class="white-text" href="#!">IPKO Foundation</a></li> -->
@@ -208,8 +251,8 @@
   <script src="assets/js/materialize.js"></script>
   <script src="assets/js/init.js"></script>
   <script src="js/init.js"></script>
-<script>
-$(document).ready(function(){
+  <script>
+  $(document).ready(function(){
 	$(".menu-links li a").click(function(e){
 		e.preventDefault();
 		var id = $(this).attr("href");
