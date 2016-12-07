@@ -33,16 +33,16 @@
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <img img src="assets/img/techstitution.jpg" alt="Unsplashed background img 1" width="180" height="180">
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact us</a></li>
+      <ul class="right hide-on-med-and-down menu-links">
+        <li><a href="#index-banner">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contactus">Contact us</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact us</a></li>
+      <ul id="nav-mobile" class="side-nav menu-links">
+        <li><a href="#index-banner">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contactus">Contact us</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="section">
 
-      <div class="row">
+      <div class="row" id="about">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>About</h4>
@@ -184,7 +184,7 @@
             <li><a class="white-text" href="#!"></a></li>
           </ul>
         </div>
-        <div class="col l3 s12">
+        <div class="col l3 s12" id="contactus">
           <h5 class="white-text">Contact us:</h5>
           <a class="white-text" href="mailto:hello@techstitution.org"> hello@techstitution.org </a></h3>
           <ul>
@@ -208,6 +208,19 @@
   <script src="assets/js/materialize.js"></script>
   <script src="assets/js/init.js"></script>
   <script src="js/init.js"></script>
+<script>
+$(document).ready(function(){
+	$(".menu-links li a").click(function(e){
+		e.preventDefault();
+		var id = $(this).attr("href");
+		console.log(id);
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 1000);
+	})
+})
+</script>
+
 
   </body>
 </html>
