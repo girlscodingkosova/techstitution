@@ -1,0 +1,23 @@
+# Where things are
+source:      .
+destination: ./_site
+plugins_dir:     ./_plugins
+layouts_dir:     ./_layouts
+data_dir: ./_data
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      true
+unpublished: false
+
+# Serving
+detach:  false
+port:    4040
+host:    0.0.0.0
+# baseurl:
+
+include: [node_modules, scss, _pages, _posts, _testimonials, css, js]
+
+sass:
+    style: compressed
