@@ -117,7 +117,8 @@ img.team-img {
 }
 
 .teal.lighten-1 {
-    background-color: #E94924 !important;
+  color: #E94924 !important;
+  background-color: #fff !important;
 }
 
 h5.team-text {
